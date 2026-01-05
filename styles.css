@@ -5,6 +5,10 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f7f9fc;
   color: #333;
@@ -51,7 +55,7 @@ body {
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .card h3 {
@@ -85,7 +89,8 @@ footer {
 
 .card ul li {
   margin-bottom: 0.4rem;
-  padding-left: 0.25rem; /* small spacing between bullet and text */
+  padding-left: 0.25rem;
+  /* small spacing between bullet and text */
 }
 
 /* Download resume button styling */
@@ -146,15 +151,26 @@ footer {
   color: white;
 }
 
+.nav-download.subtle {
+  background: transparent;
+  border: 1px solid #0ea5e9;
+  color: #0ea5e9 !important;
+}
+
+.nav-download.subtle:hover {
+  background: #e0f2fe;
+}
+
 section {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 90px;
 }
 
 .profile-pic {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  overflow: hidden; /* 🔑 keeps circle fixed */
+  overflow: hidden;
+  /* 🔑 keeps circle fixed */
   margin: 0 auto 1rem;
 
   border: 3px solid rgba(255, 255, 255, 0.6);
@@ -167,12 +183,10 @@ section {
   height: 100%;
   object-fit: cover;
 
-  transform: translate(-14px, 12px) scale(1.25); /* 👈 left + down + zoom */
+  transform: translate(-14px, 12px) scale(1.25);
+  /* 👈 left + down + zoom */
   transition: transform 0.3s ease;
 }
-
-
-
 
 @media (max-width: 600px) {
   .profile-pic img {

@@ -1,78 +1,277 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<!--
-#F9F2ED
-#3AB0FF
-#FFB562
-#F87474
--->
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML personal website</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeryn Immanuel S | AWS Python Developer</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <table cellspacing="20">
-    <tbody>
-      <tr>
-        <td><img src="image\image.jpg" alt="Jeryn profile picture">
-        </td>
-        <td>
-          <h1>Jeryn Immanuel</h1>
-          <p><em>Newly started learning HTML for futurer <strong><a
-                  href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjD2-KC4ev5AhUth-YKHVmsABwQFnoECAQQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAngular_(web_framework)&usg=AOvVaw1sXdgfi05HJNgmiiZcKO5R">Angular</a>
-                development.</strong></em></p>
-          <p>I am currently working in Entrans technologies as a junior software engineer. I am currently learning <a
-              href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjO88Ke4ev5AhU1BbcAHQNECdUQFnoECAsQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHTML&usg=AOvVaw2gzluefsF-H7bfUJ9qJGae">HTML</a> because, in
-            the future I am planning to learn angular development to get selected in a client interview.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
 
-  <hr>
-  <h3>Education</h3>
-  <ul>
-    <li>Solomon matric school</li>
-    <li>Rose Mary matric higher secondary school.</li>
-    <li><a
-        href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj17ZfV4Ov5AhXv4TgGHUJWAi8QFnoECAYQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKarunya_Institute_of_Technology_and_Sciences&usg=AOvVaw3HPW52Z9ZYNe0Us_g3nWuY">Karunya
-        university</a>.</li>
-  </ul>
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="1" border="1">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>HTML</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>Bootstrap</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <a href="hobbies.html">Hobbies</a> <a href="contacts.html">Contact info</a>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="profile-pic">
+    <img src="assets/profile.jpeg" alt="Jeryn Immanuel" />
+</div>
+
+        <h1>Jeryn Immanuel S</h1>
+        <p class="subtitle">AWS Python Developer • Backend & Cloud Engineer</p>
+
+        <div class="contact">
+            <span>📍 Nazareth, India</span>
+            <span>|</span>
+            <span>📞 7010555507</span>
+            <span>|</span>
+            <a href="mailto:jeryn123@gmail.com">jeryn123@gmail.com</a>
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience-summary">Overview</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="assets/Jeryn_Immanuel_Resume.pdf" download>Download PDF</a>
+    </nav>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="section" id="summary">
+        <h2>Professional Summary</h2>
+        <p>
+            Results-driven <strong>AWS Python Developer</strong> with <strong>5+ years of experience</strong>
+            developing and deploying scalable, cloud-native applications. Strong expertise in
+            serverless architectures using AWS Lambda, S3, SNS, SQS, Cognito, ECS, EC2, and Bedrock.
+            Proficient in Infrastructure as Code using <strong>Pulumi</strong> and building intelligent
+            document processing pipelines with <strong>Amazon Textract</strong>.
+        </p>
+        <p>
+            Previously worked as a <strong>Flutter Developer</strong>, delivering cross-platform mobile
+            applications with a strong focus on intuitive UI/UX, secure authentication, and real-time
+            data synchronization using REST and GraphQL APIs.
+        </p>
+        <p>
+            Known for strong communication and analytical skills, a collaborative mindset, and a
+            continuous drive to build reliable, high-quality software solutions.
+        </p>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section" id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div><strong>Programming Languages:</strong><br />Python, Dart</div>
+            <div><strong>Frameworks & Tools:</strong><br />FastAPI, Flask, Flutter, Pulumi, Git</div>
+            <div><strong>Cloud Services:</strong><br />AWS Lambda, S3, SNS, SQS, Cognito, EC2, ECS, Textract, Bedrock
+            </div>
+            <div><strong>Databases:</strong><br />PostgreSQL, DynamoDB, MongoDB</div>
+            <div><strong>APIs:</strong><br />RESTful, GraphQL</div>
+            <div><strong>CI/CD:</strong><br />GitHub Actions, AWS CodePipeline</div>
+            <div><strong>Source Control:</strong><br />GitHub, GitLab, AWS CodeCommit</div>
+            <div><strong>Error Tracking:</strong><br />Sentry</div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SUMMARY -->
+    <section class="section" id="experience-summary">
+        <h2>Experience Summary</h2>
+
+        <article class="card">
+            <h3>Web & API Development</h3>
+            <p>
+                Extensive experience designing and developing RESTful APIs and microservices using
+                Flask and FastAPI. Built event-driven systems integrating AWS Lambda, SQS, SNS,
+                and API Gateway. Strong background in database schema design and optimization
+                for PostgreSQL and MongoDB. Delivered secure backend services with OAuth2 and JWT
+                authentication via AWS Cognito.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Cloud & DevOps</h3>
+            <p>
+                Hands-on experience designing and operating scalable AWS architectures using
+                Lambda, ECS (Fargate & EC2), and CloudWatch. Proficient in Infrastructure as Code
+                with Pulumi, enabling repeatable and reliable environment provisioning.
+                Built CI/CD pipelines using GitHub Actions and AWS CodePipeline.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Document Processing & AI</h3>
+            <p>
+                Specialized in automated document processing pipelines using Amazon Textract
+                for OCR, table extraction, and key-value detection. Integrated Amazon Bedrock
+                for AI-powered document classification, summarization, and natural language queries.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Automation & ETL</h3>
+            <p>
+                Developed Python automation scripts using boto3 to orchestrate workflows,
+                manage AWS resources, and move data across S3, DynamoDB, and RDS.
+                Built ETL pipelines supporting SQL and NoSQL databases.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Mobile Application Development</h3>
+            <p>
+                Designed and developed cross-platform mobile applications using Flutter and Dart,
+                integrating GraphQL APIs via Hasura for real-time data synchronization.
+                Focused on secure session management and responsive UI/UX.
+            </p>
+        </article>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section class="section" id="experience">
+        <h2>Professional Experience</h2>
+
+        <article class="card">
+            <h3>AI-Driven Offboarding Automation Platform</h3>
+            <span class="meta">2025 - Present | Duration: 4 months</span>
+
+            <p>
+                Leading the design and development of an enterprise-grade SaaS platform that automates
+                large-scale employee offboarding and workforce restructuring, integrating with
+                HRIS and payroll systems such as Workday, ADP, and BambooHR.
+            </p>
+
+            <ul>
+                <li>Led end-to-end system design and production deployment</li>
+                <li>Designed scalable backend APIs and data models</li>
+                <li>Implemented SSO, OAuth2, MFA, and RBAC</li>
+                <li>Integrated AI-driven analytics for compliance and cost forecasting</li>
+                <li>Built asynchronous workflows using SQS and SNS</li>
+            </ul>
+
+            <p class="tech">
+                <strong>Technologies:</strong> Python, FastAPI, Flask, PostgreSQL, AWS (Lambda, API Gateway,
+                S3, Cognito, CloudWatch), Pulumi, Docker, ECS (Fargate)
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Prior Authorization Automation Platform</h3>
+            <span class="meta">2023 - 2025 | Duration: 2 years 8 months</span>
+
+            <p>
+                Developed backend APIs for a healthcare platform automating prior authorization
+                workflows while ensuring CMS compliance and seamless EHR integration.
+            </p>
+
+            <ul>
+                <li>Built serverless architectures using AWS Lambda and API Gateway</li>
+                <li>Implemented Textract-based document processing pipelines</li>
+                <li>Integrated Amazon Bedrock for AI-powered document intelligence</li>
+                <li>Automated infrastructure provisioning using Pulumi</li>
+                <li>Optimized CI/CD pipelines to reduce release cycles</li>
+            </ul>
+
+            <p class="tech">
+                <strong>Technologies:</strong> Python, Flask, FastAPI, AWS Lambda, Textract, S3,
+                Cognito, GitHub Actions
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Barberaa - Admin Platform Development</h3>
+            <span class="meta">2022 | Duration: 1 year</span>
+
+            <ul>
+                <li>Developed REST APIs using Flask for salon onboarding and profile management</li>
+                <li>Integrated MongoDB for reliable data storage and retrieval</li>
+                <li>Optimized queries to improve response times</li>
+                <li>Containerized services using Docker</li>
+            </ul>
+
+            <p class="tech">
+                <strong>Technologies:</strong> Flask, MongoDB, Docker, Jinja, Git
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Self-Service Mobile Application</h3>
+            <span class="meta">2021 | Duration: 1 year</span>
+
+            <ul>
+                <li>Developed cross-platform mobile applications using Flutter and Dart</li>
+                <li>Integrated Hasura GraphQL for real-time synchronization</li>
+                <li>Implemented secure authentication and encrypted local storage</li>
+                <li>Delivered polished UI aligned with Zeplin designs</li>
+            </ul>
+
+            <p class="tech">
+                <strong>Technologies:</strong> Flutter, Dart, Hasura GraphQL, Secure Storage, Git
+            </p>
+        </article>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <p>
+            <strong>Bachelor of Technology</strong><br />
+            Karunya Institute of Science and Technologies, Coimbatore<br />
+            2012 - 2016 | CGPA: 6.81
+        </p>
+        <br>
+        <p>
+            <strong>Higher Secondary</strong><br />
+            Rosemary Matric Hr. Sec. School<br />
+            2012 | AVG: 83.33%
+        </p>
+        <br>
+        <p>
+            <strong>High School</strong><br />
+            Rosemary Matric Hr. Sec. School<br />
+            2010 | AVG: 86.60%
+        </p>
+        <br>
+    </section>
+    <div class="actions" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <a href="assets/Jeryn_Immanuel_Resume.pdf" class="btn" download>
+            ⬇ Download Resume (PDF)
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Jeryn Immanuel S</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".navbar a[href^='#']");
+
+        function setActiveSection() {
+            let currentSectionId = "";
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 120 && rect.bottom > 120) {
+                    currentSectionId = section.id;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === `#${currentSectionId}`
+                );
+            });
+        }
+
+        window.addEventListener("scroll", setActiveSection);
+        window.addEventListener("load", setActiveSection);
+    </script>
 
 </body>
 
